@@ -1,0 +1,78 @@
+.wrapper {
+    margin-bottom: 3rem;
+
+    .top-title {
+        font-size: 2.4rem;
+        color: $ivory; 
+        font-weight: $bold;
+        text-transform: uppercase;
+        align-self: flex-start;
+        margin: 2rem 5rem;
+    }
+
+    .movie-box {
+        margin: 0 5rem;
+        flex-direction: row;
+        gap: 5rem;
+
+        &_half {
+            flex-direction: column;
+            width: 100%;
+            gap: 2rem;
+            padding: 1.5rem 0;
+            border: 1.5px solid rgba(242, 241, 232, 0.2);
+            margin-bottom: 1rem;
+            border-radius: 1.5rem;
+
+            .big-movie {
+                flex-direction: column;
+                position: relative;
+                width: 100%;
+                cursor: pointer;
+
+                &_poster {
+                    width: 80%;
+                    height: 30rem;
+
+                    img {
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 1.5rem;
+                    }
+                }
+
+                &_info {
+                    width: 80%;
+                    height: 100%;
+                    position: absolute;
+                    flex-direction: column;
+                    border-radius: 1.5rem;
+                    transition: all 0.5s ease-in-out;
+                    opacity: 0;
+                    gap: 3rem;
+
+                    &:hover {
+                        opacity: 1;
+                        background-color: rgba(5, 5, 51, 0.2);
+                        backdrop-filter: blur(3rem);
+                    }
+
+                    div {
+                        color: $ivory;
+                        font-size: 1.8rem;
+                        font-weight: $bold;
+                    }
+
+                    .rating {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-list-label {
+        padding-bottom: 1rem;
+    }
+}

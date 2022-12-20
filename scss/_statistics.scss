@@ -1,0 +1,93 @@
+.stats-label { font-size: 2.3rem; text-align: center; }
+.stats-wrapper { 
+    align-items: flex-start;
+    margin: 1.2rem 2rem;
+}
+
+.table-chart { 
+    flex: 1.2; 
+    flex-direction:column; 
+    align-items: flex-start;
+}
+
+.bars-chart { flex: 2; }
+
+.mov-year { 
+    padding-top: 3rem;
+    align-items: flex-start;
+    justify-content: space-evenly; 
+}
+
+.rating-ranks {
+    margin-top: 2.7rem;
+
+    h1, h3 { color: $ivory; }
+    h3 { font-size: 1.3rem; }
+    h1 { font-size: 1.5rem; text-transform: uppercase; }
+
+    th { 
+        padding: 1rem;
+        border: 2px solid rgba(212, 212, 212, 0.15);
+        text-transform: uppercase;
+    }
+
+    td { 
+        padding: 1rem; 
+        background-color: rgba(212, 212, 212, 0.15);
+        font-size: 1.1rem;
+    }
+
+    td, th {
+        color: $ivory; 
+        border-radius: 0.5rem;
+        font-weight: $bold;
+        text-align: center; 
+    }
+
+    .categ-td {
+        border: 1px solid $red;
+        background-color: transparent;
+        font-size: 1rem;
+    }
+
+    .bars {
+        flex-direction: column;
+        gap: 1.5rem;
+
+        &_each {
+            list-style-type: none;
+            width: 100%;
+        
+            .bar {
+                height: 3rem;
+
+                span {
+                    height: 3rem;
+                    float: left;
+                    background: $blue;
+                    border-bottom-right-radius: 1.5rem;
+                    border-top-right-radius: 1.5rem;
+                }
+
+                .rate-num { float: right; }
+
+                .rate-num, .rate-categ {
+                    color: $darkBlue;
+                    font-size: 1.2rem;
+                    padding: 0.8rem 1rem 0 1rem;
+                    font-weight: $bold;
+                    background-color: transparent;
+                }
+
+                &_info {
+                    gap: 1rem;
+                    float: left;
+                    margin-left: 1rem;
+                    margin-top: 0.4rem;
+
+                    .rank { font-size: 1.8rem; }
+                }
+            }
+        }
+    }
+}

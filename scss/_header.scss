@@ -1,0 +1,91 @@
+.nav-bar {
+	height: 4rem;
+	background-color: $ivory;
+	border-radius: 0;
+	display: grid;
+	grid-template-columns: 15% 45% 40%;
+	padding: 0.15rem 3.5rem;
+}
+
+.search {
+	input:focus {
+		outline: none;
+		box-shadow: 0 0 0 2px $darkBlue;
+		transition: all 0.35ms ease-in-out;
+	}
+
+	input::placeholder {
+		color: $darkBlue;
+		opacity: 0.5;
+	}
+
+	&_bar {
+		width: 65%;
+		height: 65%;
+		justify-content: flex-start;
+		padding: 0 1.5rem;
+		border-radius: 1.5rem;
+		margin-left: 10%;
+		opacity: 0.8;
+		color: $darkBlue;
+		font-family: $fontFamily;
+		background-color: rgb(181, 181, 181);
+	}
+}
+
+.logo {
+	img {
+		height: 1.8rem;
+		width: 12.5rem;
+	}
+}
+
+.menu {
+	flex-direction: row;
+	gap: 1rem;
+	color: $ivory;
+
+	&_button {
+		font-size: 1.05rem;
+		font-weight: $bold;
+		width: 7rem;
+		height: 2.5rem;
+		border-radius: 2rem;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			color: $ivory;
+			background-color: $darkBlue;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	&_login {
+        background-color: $red;
+        color: $ivory;
+        border: 2px solid $red;
+        transition: all 100ms ease-in-out;
+    
+        &:hover {
+            background-color: transparent;
+            color: $red;
+        }
+    }
+
+    &_logout {
+        background-color: $ivory;
+        color: $red;
+        border: 2px solid $red;
+        transition: all 100ms ease-in-out;
+    
+        &:hover {
+            background-color: $red;
+            color: $ivory;
+        }
+    }
+}
+
+
+
+
+

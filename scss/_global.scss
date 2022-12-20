@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	border: none;
+	font-size: 0.9rem;
+	color: $darkBlue;
+}
+
+html, body {
+    max-width: 100%;
+	overflow-x: hidden;
+	background-color: $darkBlue;
+	font-family: $fontFamily;
+	width: 100%;
+}
+
+a, input, button {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hidden { display: none; }
+
+.small-label, .label {
+	color: $ivory; 
+	font-weight: $bold;
+	text-transform: uppercase;
+}
+
+.small-label { font-size: 1.5rem; }
+
+.label { font-size: 2rem; }
+
+.error {
+	font-size: 1rem;
+	color: $red;
+	font-weight: $bold;
+}
+
+.like {
+	border-radius: 1.5rem;
+	padding: 0.3rem 0.5rem;
+	background-color: transparent;
+	font-weight: $bold;
+	color: $ivory;
+}
+
+.del {
+    border: 2px solid $red;
+    transition: all 0.35s ease-in-out;
+    &:hover { background-color: $red; }
+}
+
+.add {
+    border: 2px solid $blue;
+    transition: all 0.35s ease-in-out;
+    &:hover { background-color: $blue; }
+}
+
+.rate-btn {
+	border: 2px solid rgba(252, 226, 77, 0.942);
+	color: rgba(252, 226, 77, 0.942);
+	transition: all 0.35s ease-in-out;
+	&:hover {
+		background-color: rgba(252, 226, 77, 0.942);
+		color: $darkBlue;
+	}
+}
+
+.btns-form {
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.footer {
+	margin: 3rem 0 2rem 0;
+	&_text {
+		color: $ivory;
+		font-size: 0.8rem;
+	}
+}
+
+.modal {
+	&:before {
+	  content: ""; 
+	  display: none;
+	  background: rgba(0,0,0,.6);
+	  position: fixed;
+	  top: 0; left: 0; right: 0; bottom: 0; 
+	  z-index: 10;
+	}
+	
+	&:target {
+	  &:before { display: block; }  
+	  .modal-dialog { top: 20%; }
+	}
+  }
+  
+  .modal-dialog {
+	transition: top .25s ease;
+	padding: 0.5rem;
+	background: $ivory;
+	border-radius: 1rem;
+	margin-left: -15%;
+	position: fixed; 
+	left: 50%; 
+	top: -100%;  
+	z-index: 11; 
+	width: 25rem;
+  }
+  
+  .modal-body {
+	.star-cb-group {
+		gap: 1rem;
+		label { font-size: 1.4rem; }
+		input[type='radio'] { transform: scale(1.4); }
+	}
+  }
+  
+  .modal-header,
+  .modal-footer { padding: 1.3rem 2rem; }
+   
+  .modal-header {
+	justify-content: space-between;
+	h2, a { font-size: 1rem; }
+	.btn-close{
+		color: $darkBlue;
+		font-size: 2rem;
+	}
+	
+  }
+  
+  .modal-footer {
+	text-align: right;
+	justify-content: flex-end;
+	&_btn {
+		background-color: $red;
+		border: 2px solid $red;
+		border-radius: 1.5rem;
+		padding: 0.7rem 1rem;
+		color: $ivory;
+		font-weight: $bold;
+		transition: all 0.35s ease-in-out;
+		&:hover {
+			background-color: transparent;
+			color: $red;
+		}
+	}
+  }
+
+  .delete {
+	background-color: transparent;
+	color: $red;
+	margin-right: 0.5rem;
+	transition: all 0.35s ease-in-out;
+	&:hover {
+		background-color: $red;
+		color: $ivory;
+	}
+  }
+
+   
+
+
+
+
+
+

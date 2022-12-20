@@ -1,0 +1,66 @@
+.user-box {
+    max-width: 40rem;
+    width: 100%;
+    background-color: $ivory;
+    padding: 3rem 0;
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .user {   
+        font-family: $fontFamily;   
+        font-weight: $bold;
+
+        &_title { font-size: 1.5rem; }
+
+        &_register {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        &_input {
+            border: 2px solid $darkBlue;
+            background-color: $ivory;
+            width: 70%;
+            padding: 1rem;
+            border-radius: 1.5rem; 
+        }
+
+        &_submit {
+            background-color: $red;
+            width: 75%;
+            padding: 1rem;
+            color: $ivory;
+            border-radius: 1.5rem; 
+            cursor: pointer;
+            border: 2px solid $red;
+            
+            &:hover {
+                color: $red;
+                background-color: $ivory;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        .message {
+            color: $darkBlue;
+            font-size: 1rem;
+
+            a {
+                color: $blue;
+
+                &:hover {
+                    font-weight: $extraBold;
+                }
+            }
+        }
+
+        .hide {
+            display: none;
+        }
+    }
+}
+  
+  

@@ -1,0 +1,102 @@
+.list-box {
+    margin: 2rem 3.4rem;
+    flex-direction: column;
+
+    .showstats {
+        width: 100%;
+        justify-content: flex-end;
+
+        &_btn {
+            border: 2px solid $blue;
+            padding: 0.9rem 1.5rem;
+            border-radius: 1.5rem;
+            text-align: center;
+            align-self: flex-end;
+            transition: all 0.15s ease-in-out;
+            color: $ivory;
+
+            &:hover { 
+                background-color: $blue; 
+            }
+        }
+    }
+
+    &_half {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.9rem;
+        width: 100%;
+        overflow-x: scroll;
+        padding: 2rem 3rem;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .mylist, .top5 { padding-top: 1.1rem; }
+
+        .movie {
+            display: grid;
+            grid-template-rows: 75% 25%;
+            border-radius: 1rem;
+            width: 16rem;
+            height: 27rem;
+            margin-right: 5rem;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                transition: all 0.5s ease-in-out;
+
+                .mov { 
+                    transform: scale(105%, 105%) translate(0, -7rem);
+                }
+            }
+
+            &_poster {
+                position: relative;
+                border-top-left-radius: 1.5rem;
+                border-top-right-radius: 1.5rem;
+            
+                .mov {
+                    position: absolute;
+                    height: 135%; 
+                    width: 120%;
+                    border-radius: 1.5rem;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+
+            &_info {
+                text-align: center;
+                width: 120%;
+                background-color: rgba(212, 212, 212, 0.15);
+                border-bottom-left-radius: 1.5rem;
+                border-bottom-right-radius: 1.5rem;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                &_text {
+                    font-weight: $bold;
+                    flex-direction: column;
+                    padding-left: 1rem;
+
+                    .title {
+                        font-size: 1.1rem;
+                        color: $ivory;
+                    }
+
+                    .rating {
+                        color: $ivory;
+                        margin-top: 1rem; 
+                    }
+                }
+
+                &_btns {
+                    padding-right: 1rem;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+

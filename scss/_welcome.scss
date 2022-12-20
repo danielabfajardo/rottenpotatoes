@@ -1,0 +1,59 @@
+.welcome-wrap {
+
+    .welcometxt {
+        margin-top: 4rem;
+        flex-direction: column;
+        text-align: center;
+
+        .welcome {
+            flex-direction: row;
+            font-size: 8em;
+            font-weight: bold;
+            color : $ivory;
+        }
+
+        img {
+            padding-top: 1rem;
+            padding-left: 1rem;
+            width:8rem;
+            height:8rem;
+        }
+
+        .greet {
+            color : $ivory;
+            font-size:2em;
+        }
+
+    }
+
+    .homebutton {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+
+        .hollow {
+            padding: 1rem 3rem;
+            border-radius: 1.5rem;
+            text-align: center;
+            color: $ivory;
+            font-weight: $bold;
+            font-size: 1rem;
+            transition: all 0.15s ease-in-out;
+        
+            &:hover {
+                background-color: transparent;
+            }
+        }
+
+        .red {
+            border: 2px solid $red;
+            background: $red;
+        }
+
+        .blue {
+            border: 2px solid $blue;
+            background: $blue;
+        }
+    }
+}
