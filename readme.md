@@ -1,5 +1,7 @@
 # Rotten Potatoes Documentation
 
+Live Website: <a href="http://rotten-potatoes.herokuapp.com/components/home.php">http://rotten-potatoes.herokuapp.com/components/home.php</a>
+
 Rotten Potatoes is a movie recommendation website built with PHP, MySQL, Kaggle datasets, XAMPP and deployed on Heroku. It was created as a project for a Big Data and Applications course at my university, and is inspired by websites like IMDb. 
 
 #### Demo Screenshots
